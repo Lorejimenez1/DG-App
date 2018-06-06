@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+.feedback-page {
+  outline: 1px solid red;
+	display: flex;
+	flex-direction: column;
+}
+body {
+  font-family: sans-serif;
+  margin: auto;
+ background: #FFF url(https://subtlepatterns.com/patterns/groovepaper.png) repeat;
+  color: black
+}
+.col-6 h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  text-shadow: 2px 2px	#999;
+}
+ .col-8 h1 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  width:100%;
+  font-weight: 500;
+  text-align: center;
+}
+.results correctFeedback h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+.quiz-button {
+  font-size: 20px;
+	padding: 10px;
+	box-shadow: 2px 3px;
+}
+.quiz-button, .restart-button, .submitButton, .next-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.answer-option {
+  font-size: 25px;
+  display: block;
+}
+.submit-button, .next-button  {
+  background: rgb(82, 82, 17);
+  color: #FFF;
+  border-style: outset;
+  border-width:6px;
+  border-color: #EA0;
+  height: 50px;
+  font: bold 15px arial, sans-serif;
+  text-shadow:none;
+  padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 10%; 
+}
+.question-container {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/zwartevilt.png);
+  
+  border: 2px SOLID #FFF;
+	width: 55%;
+  color: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+}
+input:checked {
+    border: 8px solid #339;
+}
+label {
+    font-size: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    border-bottom: 1px solid  #870;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:nth-child(2) {
+  border-top: 1px solid #333;
+}
+label:hover, label:focus {
+    background-color:  #870; 
+}
+.next-button:hover, .submit-button:hover, .submit-button:focus, .next-button:focus  {
+  border: none;
+  cursor: pointer;
+  background-color:  #870; 
+}
+input[type=radio] {
+
+  margin-right: 10px;
+}
+main div {
+    margin: 0 auto;
+}
+form {
+  text-align: left;
+}
+fieldset {
+  display: flex;
+  border: none;
+}
+p {
+  font-size: 40px;
+  text-align: center;
+  text-decoration:  underline overline wavy #EA0;
+  padding: 50px;
+}
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+.col-6{
+  float: left;
+  padding-left: 1.04166666%;
+   padding-right: 1.04166666%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-12 {
+  text-align: center;
+  padding: 40px 70px;
+}
+.col-12  ul li {
+  padding-left: 20px;
+  display: inline-block;
+}
+.col-12 ul {
+  font-size: 28px; 
+  text-shadow: 2px 1px Grey;
+  list-style: none;
+}
+ .col-8, .col-12 {
+  padding: 40px; 
+  display: inline;
+  text-align: center;
+}
+.col-3, .col-4, .col-6, .col-12 {
+  width:100%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+.row::after {
+  clear: both;
+}
+@media screen and (max-width: 639px) {
+   .feedback-page img {
+    height: 50%;
+		display: block;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+  .question-container { 
+      font-size: 15px;
+      padding: 15px
+    }
+    label.answer-option {
+      font-size: 15px;
+    }
+    .next-button {
+      width: 50%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .feedback-page img {
+    height: 400px;
+		display: block;
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+  .next-button {
+    width: 650px;
+    margin-left: auto;
+		margin-right: auto;
+  }
+  
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width:33%;
+  }
+  .col-6 {
+    width:50%;
+  }
+  .col-12 {
+    width:100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .row {
+    width:100%;
+  }
+}

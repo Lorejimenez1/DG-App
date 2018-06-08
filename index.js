@@ -6,7 +6,7 @@ function generateQuestion() {
     return `<div class="question-container">
     <h2>${store[questionNumber].question}</h2>
     <form>
-    <fieldset><legend>Select an answer from the options below:</legend>
+    <fieldset role="radiogroup" aria-labelledby="radioHeader"><legend id="radioHeader">Select an answer from the options below:</legend>
     <label class="answer-option">
     <input type="radio" value="${store[questionNumber].answers[0]}" name="answer" required>
     <span>${store[questionNumber].answers[0]}</span>
@@ -92,9 +92,9 @@ function ifAnswerIsWrong () {
 function correctFeedback() {
   $('#quiz-box').html(`
     <section class="feedback-page">
-    <h2>You are right!</h2>
-    <img class='correct-img'src="https://media2.giphy.com/media/Yggr0uQUbA79C/giphy.gif" alt='Troy barnes and Abed Nadir'>
-    <button class="next-button">Next</button>
+      <h2>You are right!</h2>
+      <img class='correct-img'src="https://media2.giphy.com/media/Yggr0uQUbA79C/giphy.gif" alt='Troy barnes and Abed Nadir'>
+      <button class="next-button">Next</button>
     </section>
   
 `);
